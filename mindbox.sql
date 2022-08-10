@@ -19,5 +19,5 @@ CREATE TABLE links(
 --сам запрос на получение всех пар продукт-категория
 select prods.prod, cats.cat FROM
 links 
-	left JOIN prods on prods.id = links.prod
+    LEFT JOIN prods on prods.id = links.prod
     LEFT JOIN cats on cats.id = links.cat;
